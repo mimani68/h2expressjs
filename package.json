@@ -1,0 +1,23 @@
+{
+  "name": "h2expressjs",
+  "version": "1.0.0",
+  "description": "run HTTP2 protocol via express.js server",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "npm run clean && node app.js --dev",
+    "start:prod": "npm run clean && node app.js --prod",
+    "clean": "rm -rf ./dist"
+  },
+  "keywords": [
+    "http2",
+    "express.js",
+    "spdy"
+  ],
+  "author": "mahdi imani <imani.mahdi@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "spdy": "^4.0.0"
+  }
+}
